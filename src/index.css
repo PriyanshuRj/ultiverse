@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #010101;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@font-face {
+  font-family: 'Terminus';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./fonts/Terminus (TTF) Bold 700.ttf') format('truetype');
 }

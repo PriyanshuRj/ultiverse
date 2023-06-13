@@ -1,0 +1,89 @@
+.headerContainer{
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+.logo{
+    height: 1.6rem;
+}
+.logoAndLoader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+.loaderContainer{
+    margin-left: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    height: 3rem;
+    width: 41.5rem;
+    
+    display: flex;
+    border: 0.5px solid rgba(255, 255, 255,0.1);
+
+}
+.loader{
+    height: 100%;
+    width: 10%;
+    background: #00FFE6;
+}
+.navbar{
+    border: 0.5px solid rgba(255, 255, 255,0.1);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.navLink{
+    position: relative;
+    width: 28%;
+    color: white;
+    /* overflow: hidden; */
+    font-family: 'Terminus';
+    display: flex;
+    align-items: center;
+    border-right: 0.5px solid rgba(255, 255, 255,0.1);
+
+}
+.navTitle{
+    
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.socialLink{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    color: white;
+    border-right: 0.5px solid rgba(255, 255, 255,0.1);
+
+    font-family: 'Terminus';
+}
+.navNumber{
+    position: absolute;
+   
+    bottom: 10px;
+    left : 10px;
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255,0.5);
+    margin: 0;
+
+}
+.navSocialLogo{
+    height: 0.8rem;
+    /* width: ; */
+}
+.toggleMenuButton{
+    display: flex;
+    width: 12%;
+    justify-content: center;
+    align-items: center;
+}
