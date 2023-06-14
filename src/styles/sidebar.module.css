@@ -1,0 +1,37 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Terminus';
+    color: rgba(255, 255, 255,0.3);
+    font-size: 1.2rem;
+    margin: 0.5rem 0rem;
+
+}
+.side{
+    display: flex;
+    flex-direction: row;
+}
+.first{
+    display: flex;
+    width: 0.3rem;
+    height: 1.65rem;
+    background-color: rgba(255, 255, 255,0.3);
+}
+.second{
+    display: flex;
+
+    width: 0.1rem;
+    height: 1.65rem;
+    background-color: rgba(255, 255, 255,0.3);
+    margin-left : 0.2rem;
+}
+.linkText{
+    margin-left: 0.5rem;
+}

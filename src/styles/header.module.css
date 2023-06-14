@@ -5,7 +5,7 @@
     height: auto;
     align-items: center;
     height: fit-content;
-    width: 100%;
+    /* width: 100%; */
 }
 .logo{
     height: 1.6rem;
@@ -46,12 +46,12 @@
     font-family: 'Terminus';
     display: flex;
     align-items: center;
+    justify-content: center;
     border-right: 0.5px solid rgba(255, 255, 255,0.1);
 
 }
 .navTitle{
     
-    width: 100%;
     margin: 0;
     text-align: center;
     font-size: 0.8rem;
