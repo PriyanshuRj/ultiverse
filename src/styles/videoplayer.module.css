@@ -33,3 +33,14 @@
     top: 50% - 105px;
     left: 50% - 105px;
 }
+@media screen and (max-width: 1300px) {
+    .metaverse svg{
+        height: 6rem;
+        width: fit-content;
+    }
+    .immersive svg{
+        height: 6.5rem;
+        width: fit-content;
+    
+    }
+}

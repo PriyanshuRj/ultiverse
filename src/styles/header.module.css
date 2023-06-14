@@ -5,11 +5,6 @@
     height: auto;
     align-items: center;
     height: fit-content;
-    /* width: 100%; */
-}
-
-.logo {
-    height: 1.6rem;
 }
 
 .logoAndLoader {
@@ -17,25 +12,42 @@
     flex-direction: row;
     align-items: center;
     width: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
 }
-
+.logoContainer{
+    height: auto;
+    padding: 0 1rem;
+    display: flex;
+    height: 100%;
+    
+}
+.logo {
+    height: 1.6rem;
+}
 .loaderContainer {
-    margin-left: 1rem;
     background: rgba(255, 255, 255, 0.1);
     height: 3rem;
-    width: 41.5rem;
-
+    width: 100%;
     display: flex;
-    border: 0.5px solid rgba(255, 255, 255, 0.1);
-
 }
 
 .loader {
     height: 100%;
-    width: 10%;
+    animation: widthAnimation 4s infinite;
     background: #00FFE6;
 }
 
+@keyframes widthAnimation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+        width: 0;
+      }
+  }
 .navbar {
     border: 0.5px solid rgba(255, 255, 255, 0.1);
     height: 3rem;
@@ -48,7 +60,6 @@
     position: relative;
     width: 28%;
     color: white;
-    /* overflow: hidden; */
     font-family: 'Terminus';
     display: flex;
     align-items: center;
@@ -57,8 +68,6 @@
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-
-
 
 .navTitle {
     margin: 0;
@@ -102,13 +111,11 @@
 .socialLink:hover {
     color: black;
     background-color: white;
-
 }
 
 .socialLink:hover .navNumber {
     color: rgba(0, 0, 0, 0.8);
 }
-
 
 .toggleMenuButton {
     display: flex;
@@ -116,13 +123,31 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    cursor: pointer;
 }
+
 .toggleMenuButton:hover {
-    color: black;
     background-color: white;
-    fill: black;
 
 }
 .toggleMenuButton:hover path{
     stroke: black;
+    stroke-opacity: 0.8;
+}
+@media screen and (max-width: 1000px) {
+    .navLink{
+        display: none;
+    }
+    .socialLink{
+        display: none;
+    }
+    .logoAndLoader{
+        width: 100%;
+    }
+    .navbar{
+        width: 6rem;
+    }
+    .toggleMenuButton{
+        width: 100%;
+    }
 }

@@ -39,6 +39,14 @@
     margin: 0;
     margin-right: 1rem;
 }
-.titleLine{
-
+@media screen and (max-width: 1300px) {
+    .metaverse svg{
+        height: 6rem;
+        width: fit-content;
+    }
+    .immersive svg{
+        height: 6.5rem;
+        width: fit-content;
+    
+    }
 }

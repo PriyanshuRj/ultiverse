@@ -6,8 +6,10 @@ export default function Header() {
     return (
         <div className={style.headerContainer}>
             <div className={style.logoAndLoader}>
+                <div className={style.logoContainer}>
 
                 <img src={logoPath} alt="logo" className={style.logo} />
+                </div>
                 <div className={style.loaderContainer}>
                     <span className={style.loader}></span>
                 </div>
