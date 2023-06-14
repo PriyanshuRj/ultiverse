@@ -4,37 +4,14 @@
 .backgroundLines{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     position: absolute;
     overflow-y: hidden;
 
 }
-.satalite{
-    position: absolute;
-    height: 80%;
-    width: 100%;
+.titleVideoContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    overflow: hidden;
-    
-}
-.sataliteVector{
-    position: absolute;
-    top: 74%;
-    height: 20rem;
-    z-index: -2;
-}
-.satalite img{
-    position: absolute;
-    height: 92%;
-    /* z-index: 1; */
-}
-.sataliteGlow{
-    position: absolute;
-    height: 12rem;
-    z-index: -2;
-
+    align-items: flex-end;
+    position: relative;
 }

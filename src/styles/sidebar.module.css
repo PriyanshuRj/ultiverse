@@ -1,8 +1,15 @@
+.sidebarContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-left: 3rem;
+
+
+}
 .sidebar{
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
-    margin-top: 4rem;
+    cursor: pointer;
 }
 .link{
     display: flex;
@@ -10,28 +17,67 @@
     align-items: center;
     font-family: 'Terminus';
     color: rgba(255, 255, 255,0.3);
-    font-size: 1.2rem;
-    margin: 0.5rem 0rem;
-
+    font-size: 1rem;
+    margin: 0.4rem 0rem;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+.link:hover{
+    color: #00FFE6;
+    transform: scale(1.2);
+}
+.link:hover .first,.link:hover .second{
+    background-color: #00FFE6;
 }
 .side{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
 .first{
     display: flex;
-    width: 0.3rem;
-    height: 1.65rem;
+    width: 0.24rem;
+    height: 1.32rem;
     background-color: rgba(255, 255, 255,0.3);
+    transition: all .2s ease-in-out;
 }
 .second{
     display: flex;
-
-    width: 0.1rem;
-    height: 1.65rem;
+    width: 0.08rem;
+    height: 1.32rem;
     background-color: rgba(255, 255, 255,0.3);
-    margin-left : 0.2rem;
+    margin-left : 0.16rem;
+    transition: all .2s ease-in-out;
 }
 .linkText{
     margin-left: 0.5rem;
 }
+.clickButton{
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    height: 4rem; 
+}
+.clickButtonText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6rem;
+}
+.clickButtonVector{
+    position: relative;
+    transition: all 0.3s ease;
+    height: 6rem;
+}
+
+.clickButtonVector:hover {
+    transform: scale(1.2);
+    transform: scale(1.2) rotate(90deg);
+  }
+  .clickButton:hover svg{
+    stroke: #00FFE6;
+  }
+  .clickButton:hover svg path{
+    stroke: #00FFE6;
+  }

@@ -1,0 +1,35 @@
+.videoPlayerContainer{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 3rem;
+
+}
+.videoPlayer{
+   position: relative;
+   clip-path: url(#clip);
+}
+.videoPlayer {
+    height: 24.58rem;
+}
+.maskSVG{
+    position: absolute;
+}
+
+.borderOverlay{
+    position: absolute;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+   
+}
+.borderOverlay:hover{
+ background-color: rgba(0, 0, 0,0.2);
+}
+
+.playOverlay{
+    position: absolute;
+    top: 50% - 105px;
+    left: 50% - 105px;
+}

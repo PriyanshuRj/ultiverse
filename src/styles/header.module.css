@@ -1,4 +1,4 @@
-.headerContainer{
+.headerContainer {
     margin: 2rem 4rem;
     display: flex;
     flex-direction: row;
@@ -7,38 +7,44 @@
     height: fit-content;
     /* width: 100%; */
 }
-.logo{
+
+.logo {
     height: 1.6rem;
 }
-.logoAndLoader{
+
+.logoAndLoader {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 50%;
 }
-.loaderContainer{
+
+.loaderContainer {
     margin-left: 1rem;
     background: rgba(255, 255, 255, 0.1);
     height: 3rem;
     width: 41.5rem;
-    
+
     display: flex;
-    border: 0.5px solid rgba(255, 255, 255,0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
 
 }
-.loader{
+
+.loader {
     height: 100%;
     width: 10%;
     background: #00FFE6;
 }
-.navbar{
-    border: 0.5px solid rgba(255, 255, 255,0.1);
+
+.navbar {
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
     height: 3rem;
     display: flex;
     flex-direction: row;
     width: 50%;
 }
-.navLink{
+
+.navLink {
     position: relative;
     width: 28%;
     color: white;
@@ -47,43 +53,76 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 0.5px solid rgba(255, 255, 255,0.1);
-
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
-.navTitle{
-    
+
+
+
+.navTitle {
     margin: 0;
     text-align: center;
     font-size: 0.8rem;
 }
-.socialLink{
+
+.socialLink {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 16%;
     color: white;
-    border-right: 0.5px solid rgba(255, 255, 255,0.1);
-
+    border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
     font-family: 'Terminus';
+    cursor: pointer;
 }
-.navNumber{
+.navSocialLogo {
+    height: 0.8rem;
+}
+.navNumber {
     position: absolute;
-   
     bottom: 10px;
-    left : 10px;
+    left: 10px;
     font-size: 0.5rem;
-    color: rgba(255, 255, 255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+.navLink:hover {
+    color: black;
+    background-color: white;
 
 }
-.navSocialLogo{
-    height: 0.8rem;
-    /* width: ; */
+
+.navLink:hover .navNumber {
+    color: rgba(0, 0, 0, 0.8);
 }
-.toggleMenuButton{
+.socialLink:hover {
+    color: black;
+    background-color: white;
+
+}
+
+.socialLink:hover .navNumber {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.toggleMenuButton {
     display: flex;
     width: 12%;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+}
+.toggleMenuButton:hover {
+    color: black;
+    background-color: white;
+    fill: black;
+
+}
+.toggleMenuButton:hover path{
+    stroke: black;
 }

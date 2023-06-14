@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-family: 'Terminus';
+    color: white;
+    align-items: center;
+    z-index: 1;
+    width: fit-content;
+    cursor: pointer;
+}
+.footer svg{
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+
+}
+.upperLine {
+    margin: 0;
+    font-size: 0.8rem;
+
+}
+.lowerLine{
+    margin: 0;
+    margin-top: 0.4rem;
+    font-size: 0.8rem; 
+}
+.footer:hover svg{
+    fill: yellowgreen;
+    stroke: #00FFE6;
+    transform: scale(1.2);
+}
