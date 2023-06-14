@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import style from "./app.module.css";
 import BackgroundLine from './backgroundLine.js';
@@ -23,6 +23,7 @@ const styles = {
   overflow: 'hidden'
 };
 export default function App() {
+  const [modalIsOpen, openModal] = useState(false);
   return (
 
     <div style={styles}>
@@ -38,9 +39,9 @@ export default function App() {
       <div className={style.titleVideoContainer}>
 
       <Title />
-      <VideoPlayer />
+      <VideoPlayer openModal={openModal} modalIsOpen={modalIsOpen} />
       </div>
-      <Footer />
+      <Footer modalIsOpen={modalIsOpen}/>
     </div>
   )
 }

@@ -5,6 +5,7 @@
     height: auto;
     align-items: center;
     height: fit-content;
+    z-index: 10;
 }
 
 .logoAndLoader {

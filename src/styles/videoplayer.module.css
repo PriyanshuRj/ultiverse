@@ -33,14 +33,48 @@
     top: 50% - 105px;
     left: 50% - 105px;
 }
-@media screen and (max-width: 1300px) {
-    .metaverse svg{
-        height: 6rem;
-        width: fit-content;
-    }
-    .immersive svg{
-        height: 6.5rem;
-        width: fit-content;
+.popupImage{
+    height: 68vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    content: "image"
+}
+.playerDIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.playerBackgorundSVG{
     
+    width: 80%;
+}
+.clickButton{
+    position: absolute;
+    bottom: 24%;
+    right: 16%;
+}
+.closeSVG{
+    position: absolute;
+    bottom: 20%;
+    left: 16%;
+    height: 1.6rem;
+}
+.crossSVG{
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    height: 1.6rem;
+}
+@media screen and (max-width: 1300px) {
+    .videoPlayerContainer{
+        transform: scale(0.7);
+        bottom: -4rem;
+        right: 0;
     }
 }

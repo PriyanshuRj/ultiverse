@@ -14,7 +14,7 @@ export default function Satelite() {
           <defs>
             <linearGradient id="paint0_linear_1_13102" x1="481" y1="260.287" x2="481" y2="-89.5404" gradientUnits="userSpaceOnUse">
               <stop />
-              <stop offset="1" stop-opacity="0" />
+              <stop offset="1" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -24,8 +24,8 @@ export default function Satelite() {
             <circle cx="127" cy="127" r="50" fill="#00FFE6" />
           </g>
           <defs>
-            <filter id="filter-neon-glow" x="0" y="0" width="254" height="254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="10" result="BackgroundImageFix" />
+            <filter id="filter-neon-glow" x="0" y="0" width="254" height="254" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="10" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
               <feGaussianBlur stdDeviation="25.5" result="effect1_foregroundBlur_1_13123" />
             </filter>
@@ -36,8 +36,8 @@ export default function Satelite() {
             <circle cx="377" cy="377" r="281" fill="#00FFE6" />
           </g>
           <defs>
-            <filter id="filter0_f_1_13182" x="0" y="0" width="754" height="754" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter0_f_1_13182" x="0" y="0" width="754" height="754" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
               <feGaussianBlur stdDeviation="48" result="effect1_foregroundBlur_1_13182" />
             </filter>
