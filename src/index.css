@@ -20,3 +20,6 @@ code {
   font-style: normal;
   src: url('./fonts/Terminus (TTF) Bold 700.ttf') format('truetype');
 }
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}

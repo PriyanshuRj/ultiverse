@@ -21,7 +21,7 @@ export  const styles = {
       transform: 'translate(-50%, -50%)',
       background: 'transparent',
       overflow: 'auto',
-      WebkitOverflowScrolling: 'touch',
+      WebkitOverflowScrolling: 'none',
       border: 'none',
       outline: 'none',
       padding: '0'

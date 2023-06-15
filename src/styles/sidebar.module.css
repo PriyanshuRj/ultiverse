@@ -81,3 +81,8 @@
   .clickButton:hover svg path{
     stroke: #00FFE6;
   }
+  @media screen and (max-width: 1200px) {
+    .sidebarContainer{
+        margin-left: 2rem;
+    }
+}

@@ -12,12 +12,15 @@ export default function Footer({ modalIsOpen }) {
                 <span className={style.audioVectorLineFive}></span>
             </div>
             <div className={modalIsOpen ? style.singleLine : style.multiLine}>
+                {modalIsOpen ? <p className={style.upperLine}>UTILIZING METAFI, UE5, AND WEB3 TECHNOLOGY TO CREATE A SOCIAL AND IMMERSIVE GAMING METAVERSE.</p> : 
+                <>
                 <p className={style.upperLine}>
                     UTILIZING METAFI, UE5, AND WEB3 TECHNOLOGY TO
                 </p>
-                <p className={` ${modalIsOpen ? style.lowerLineModal : style.lowerLine}`}>
+                <p className={style.lowerLine}>
                     CREATE A SOCIAL AND IMMERSIVE GAMING METAVERSE.
                 </p>
+                </>}
             </div>
         </div>
     )

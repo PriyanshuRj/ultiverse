@@ -17,7 +17,8 @@
 }
 .satalite img{
     position: absolute;
-    height: 92%;
+    /* height: 92%; */
+    width: 45%;
 }
 .sataliteGlow{
     
@@ -30,4 +31,48 @@
 }
 .sataliteBackgroundGlow g{
     mix-blend-mode: overlay;
+}
+@media screen and (max-width: 1400px) {
+    .satalite img{
+        width: 50%;
+    }
+    .sataliteBackgroundGlow{
+        width: 30rem;
+    }
+    .sataliteVector{
+        height: 18rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .satalite img{
+        width: 58%;
+    }
+    .sataliteGlow{
+        height: 10rem;
+    }
+    .sataliteBackgroundGlow{
+        width: 28rem;
+    }
+    .sataliteVector{
+        height: 14rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .satalite img{
+        width: 70%;
+    }
+    .sataliteBackgroundGlow{
+        width: 26rem;
+    }
+    .sataliteVector{
+        height: 10rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .satalite img{
+        width: 80%;
+    }
+    .sataliteBackgroundGlow{
+        width: 24rem;
+    }
 }

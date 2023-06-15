@@ -44,10 +44,40 @@
 .crossSVG svg{
     height: 1.6rem;
 }
+@media screen and (max-width: 1400px) {
+    .videoPlayerContainer{
+        transform: scale(0.9);
+        bottom: -1rem;
+        right: 0;
+    }
+}
 @media screen and (max-width: 1300px) {
     .videoPlayerContainer{
         transform: scale(0.7);
         bottom: -4rem;
         right: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .videoPlayerContainer{
+        transform: scale(0.6);
+        bottom: -5.5rem;
+        right: -2rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .videoPlayerContainer{
+        position: relative;
+        transform: scale(1);
+        margin: auto;
+        margin-top: -3.2rem;
+        right: auto;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .videoPlayerContainer{
+        margin-top: -7rem;
+        transform: scale(0.7);
     }
 }

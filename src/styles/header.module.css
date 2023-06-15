@@ -5,7 +5,6 @@
     height: auto;
     align-items: center;
     height: fit-content;
-    z-index: 10;
 }
 
 .logoAndLoader {
@@ -135,6 +134,11 @@
     stroke: black;
     stroke-opacity: 0.8;
 }
+@media screen and (max-width: 1200px) {
+    .headerContainer{
+        margin: 2rem;
+    }
+}
 @media screen and (max-width: 1000px) {
     .navLink{
         display: none;
@@ -150,5 +154,26 @@
     }
     .toggleMenuButton{
         width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .navbar{
+        width: 3rem;
+    }
+    .navbar svg{
+        width: 1.5rem;
+    }
+    .headerContainer{
+        margin: 1rem;
+    }
+    .loaderContainer {
+        height: 1.8rem;
+    }
+    .navbar{
+        height: 1.8rem;
+    }
+    .logo {
+        height: 1rem;
     }
 }

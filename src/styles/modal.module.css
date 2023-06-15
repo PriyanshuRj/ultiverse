@@ -1,3 +1,9 @@
+.modalParentDiv{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .popupImage{
     position: absolute;
     top:0;
@@ -8,7 +14,7 @@
 }
 .backgroundImage{
     content: "image";
-    height: 68vh;
+    width: 74vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,12 +24,14 @@
     transform: translate(-50%, -50%);
 }
 .playerDIV{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 .playerBackgorundSVG{
+    height: fit-content;
     width: 80%;
 }
 .clickButton{
@@ -33,16 +41,92 @@
 }
 .closeSVG{
     position: absolute;
-    bottom: 20%;
+    bottom: 4%;
     left: 16%;
 }
 .closeSVG svg{
     height: 1.6rem;
 }
-.playerGlow{
-    position: absolute;
+
+@media screen and (max-width: 1400px) {
+    .playerBackgorundSVG{
+        width: 85%;
+    }
+    .closeSVG{
+        bottom: 6%;
+    }
 }
-.playerGlow g{
-    mix-blend-mode:overlay
+
+@media screen and (max-width: 1200px) {
+    .closeSVG{
+        bottom: 10%;
+        left: 15%;
+    }
+    .closeSVG svg{
+        height: 1.4rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .closeSVG{
+        bottom: 14%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .playerBackgorundSVG path{
+        stroke-opacity: 70%;
+    }
+    .closeSVG svg{
+        height: 1.2rem;
+    }
+    .closeSVG{
+        left: 14%;
+        bottom: 20%;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .closeSVG{
+        bottom: 24%;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .closeSVG{
+        bottom: 27%;
+        left: 14%;
+    }
+    .closeSVG svg{
+        height: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .closeSVG{
+        bottom: 30%;
+        left:11%;
+    }
+    .backgroundImage{
+        width:80vw
+    }
+    .playerBackgorundSVG{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .closeSVG{
+        bottom: 35%;
+        left: 9%;
+    }
+    .closeSVG svg{
+        height: 0.7rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+
+    .closeSVG{
+        bottom: 39%;
+    }
 
 }

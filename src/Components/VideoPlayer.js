@@ -19,7 +19,7 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
         style={styles}
         contentLabel="Example Modal"
       >
-        <ModalContent openModal={openModal} />
+        <ModalContent openModal={openModal} modalIsOpen={modalIsOpen} />
       </Modal>
       <div  >
         {/* Mask for the video player Image */}
