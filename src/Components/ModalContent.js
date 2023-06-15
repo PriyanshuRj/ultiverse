@@ -1,5 +1,4 @@
 import React from 'react'
-import ClickButton from './SVGs/ClickButton';
 import style from "../styles/modal.module.css";
 import CrossSVG from './SVGs/CrossSVG';
 const popupImage = process.env.PUBLIC_URL + '/popupImage.png'
@@ -29,11 +28,7 @@ export default function ModalContent({ openModal }) {
             <div className={style.closeSVG}>
                 <CrossSVG className={style.closeSVG} />
             </div>
-            <div className={style.clickButton} onClick={() => openModal(false)}>
-
-
-                <ClickButton />
-            </div>
+           
         </div>
     )
 }

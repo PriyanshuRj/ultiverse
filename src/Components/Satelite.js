@@ -5,7 +5,7 @@ export default function Satelite() {
   return (
     <div className={style.satalite}>
 
-
+      {/* Satellite background image  */}
       <img className={style.sataliteImage} src={satalite} alt="satalite" />
 
       <svg className={style.sataliteVector} width="962" height="405" viewBox="0 0 962 405" fill="none" xmlns="http://www.w3.org/2000/svg">

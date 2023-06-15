@@ -1,6 +1,5 @@
 import React from 'react'
 import style from "../styles/sidebar.module.css"
-import ClickButton from './SVGs/ClickButton';
 export default function Sidebar() {
     return (
         <div className={style.sidebarContainer}>
@@ -41,7 +40,6 @@ export default function Sidebar() {
                     <span className={style.linkText}>EVENTS</span>
                 </div>
             </div>
-            <ClickButton />
         </div>
     )
 }

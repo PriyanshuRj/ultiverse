@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from "../styles/videoplayer.module.css"
 import Modal from 'react-modal';
 import ModalContent from './ModalContent';
@@ -22,6 +22,7 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
         <ModalContent openModal={openModal} />
       </Modal>
       <div  >
+        {/* Mask for the video player Image */}
         <div className={style.maskSVG}>
           <svg width="351" height="394" viewBox="0 0 351 394" fill="none" xmlns="http://www.w3.org/2000/svg">
             <clipPath id="clip" >
@@ -32,6 +33,7 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
         <img className={style.videoPlayer} src={videoImage} alt="video Image" />
 
       </div>
+      {/* Gradiant Border for the video player Image */}
       <svg onClick={() => openModal(true)} className={style.borderOverlay} width="351" height="394" viewBox="0 0 351 394" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M335.246 1.00003L284.62 1.00003C282.23 1.00003 279.936 1.94255 278.237 3.62309L257.637 23.9995C255.249 26.3616 252.025 27.6868 248.664 27.6868L116.318 27.6868C112.958 27.6868 109.733 26.3615 107.345 23.9995L88.4054 5.26537C85.6428 2.53271 81.9125 1 78.0253 1L16.6202 1C8.4729 1 1.86658 7.59858 1.86658 15.7404L1.86657 94.4813L1.86657 94.4849L1.86648 94.5319L1.8665 378.26C1.8665 386.401 8.47282 393 16.6201 393L77.5652 393C81.7421 393 85.7235 391.231 88.5211 388.132L107.307 367.321C109.725 364.642 113.167 363.113 116.778 363.113L248.204 363.113C251.815 363.113 255.257 364.642 257.675 367.321L278.334 390.207C279.939 391.985 282.224 393 284.62 393L335.246 393C343.394 393 350 386.401 350 378.26L350 282.371L350 282.335L350 15.7404C350 7.5986 343.394 1.00003 335.246 1.00003Z" stroke="url(#paint0_linear_1_13179)" strokeWidth="2" />
         <defs>
@@ -42,6 +44,9 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
           </linearGradient>
         </defs>
       </svg>
+
+
+      {/* Play button for video player Image */}
       <svg className={style.playOverlay} width="105" height="104" viewBox="0 0 105 104" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_145_13309)">
           <circle cx="52.4684" cy="51.828" r="30.9012" fill="white" fillOpacity="0.1" />
