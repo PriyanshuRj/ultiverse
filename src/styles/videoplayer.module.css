@@ -22,6 +22,7 @@
     position: absolute;
     z-index: 1;
     transition: all .2s ease-in-out;
+    cursor: pointer;
    
 }
 .borderOverlay:hover{
@@ -51,7 +52,6 @@
     height: 100vh;
 }
 .playerBackgorundSVG{
-    
     width: 80%;
 }
 .clickButton{
@@ -67,8 +67,8 @@
 }
 .crossSVG{
     position: absolute;
-    bottom: 10%;
-    left: 8%;
+    bottom: 5%;
+    right: 5%;
     height: 1.6rem;
 }
 @media screen and (max-width: 1300px) {
