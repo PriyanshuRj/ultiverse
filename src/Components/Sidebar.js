@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../styles/sidebar.module.css"
-import ClickButton from './ClickButton'
+import ClickButton from './SVGs/ClickButton';
 export default function Sidebar() {
     return (
         <div className={style.sidebarContainer}>

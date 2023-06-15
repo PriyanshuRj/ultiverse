@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     margin-left: 3rem;
@@ -11,41 +11,141 @@
     width: fit-content;
     cursor: pointer;
     z-index: 10;
-    
+
 }
-.footer svg{
+
+.footer svg {
     margin-right: 1rem;
     transition: all 0.3s ease;
 
 }
+
+.audioVector {
+    margin-right: 1rem;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.audioVectorLineOne {
+    border-radius: 10px;
+    background-color: white;
+    width: 2.2px;
+    animation: higtAnimation3 1s infinite;
+}
+
+.audioVectorLineTwo {
+    border-radius: 10px;
+    background-color: white;
+    width: 2.2px;
+    animation: higtAnimation 1s infinite;
+}
+
+.audioVectorLineThree {
+    border-radius: 10px;
+    background-color: white;
+    width: 2.2px;
+    animation: higtAnimation2 1s infinite;
+
+}
+
+.audioVectorLineFour {
+    border-radius: 10px;
+    background-color: white;
+    width: 2.2px;
+    animation: higtAnimation 1s infinite;
+}
+
+.audioVectorLineFive {
+    border-radius: 10px;
+    background-color: white;
+    width: 2.2px;
+    animation: higtAnimation2 1s infinite;
+}
+
+@keyframes higtAnimation {
+    0% {
+        height: 100%;
+    }
+
+    50% {
+        height: 50%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes higtAnimation2 {
+    0% {
+        height: 40%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    100% {
+        height: 40%;
+    }
+}
+
+@keyframes higtAnimation3 {
+    0% {
+        height: 20%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    100% {
+        height: 20%;
+    }
+}
+
 .upperLine {
     margin: 0;
     font-size: 0.8rem;
 
 }
-.lowerLine{
+
+.lowerLine {
     margin: 0;
     margin-top: 0.4rem;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
-.lowerLineModal{
+
+.lowerLineModal {
     margin: 0;
     margin-left: 0.4rem;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
-.footer:hover svg{
-    fill: yellowgreen;
+
+.footer:hover .audioVector {
     stroke: #00FFE6;
     transform: scale(1.2);
 }
-.multiLine{
+
+.footer:hover .audioVector span {
+    background-color: #00FFE6;
+    ;
+}
+
+.multiLine {
     display: flex;
     flex-direction: column;
 }
-.footerFullWindth{
+
+.footerFullWindth {
     width: 100%;
 }
-.singleLine{
+
+.singleLine {
     display: flex;
     flex-direction: row;
     justify-content: center;

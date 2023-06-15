@@ -32,7 +32,7 @@ export default function Satelite() {
           </defs>
         </svg>
         <svg className={style.sataliteBackgroundGlow} width="754" height="754" viewBox="0 0 754 754" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g style={{mixBlendMode:"overlay",}} filter="url(#filter0_f_1_13182)">
+          <g filter="url(#filter0_f_1_13182)">
             <circle cx="377" cy="377" r="281" fill="#00FFE6" />
           </g>
           <defs>

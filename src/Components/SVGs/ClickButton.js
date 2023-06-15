@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../styles/sidebar.module.css"
+import style from "../../styles/sidebar.module.css"
 export default function ClickButton() {
   return (
     <div className={style.clickButton}>

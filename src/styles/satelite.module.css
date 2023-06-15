@@ -28,3 +28,6 @@
     position: absolute;
     width: 32rem;
 }
+.sataliteBackgroundGlow g{
+    mix-blend-mode: overlay;
+}

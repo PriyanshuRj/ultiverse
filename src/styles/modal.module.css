@@ -1,0 +1,46 @@
+.popupImage{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+
+}
+.backgroundImage{
+    content: "image";
+    height: 68vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.playerDIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.playerBackgorundSVG{
+    width: 80%;
+}
+.clickButton{
+    position: absolute;
+    bottom: 24%;
+    right: 16%;
+}
+.closeSVG{
+    position: absolute;
+    bottom: 20%;
+    left: 16%;
+    height: 1.6rem;
+}
+.playerGlow{
+    position: absolute;
+}
+.playerGlow g{
+    mix-blend-mode:overlay
+
+}
