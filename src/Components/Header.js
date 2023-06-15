@@ -35,9 +35,7 @@ export default function Header() {
                     <p className={style.navNumber}>004</p>
                 </div>
                 <div onClick={()=> {
-                    setNavOpen(prev=> !prev)
-                    console.log("hERE", navOpen)
-                    }} className={style.toggleMenuButton}>
+                    setNavOpen(prev=> !prev)}} className={style.toggleMenuButton}>
                     <svg width="47" height="10" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M47 1H1.24513e-06M47 9H7.70988" stroke="white" strokeOpacity="0.5" strokeWidth="0.5" />
                     </svg>
