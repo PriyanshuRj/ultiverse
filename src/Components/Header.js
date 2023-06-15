@@ -8,7 +8,7 @@ export default function Header() {
             <div className={style.logoAndLoader}>
                 <div className={style.logoContainer}>
 
-                <img src={logoPath} alt="logo" className={style.logo} />
+                    <img src={logoPath} alt="logo" className={style.logo} />
                 </div>
                 <div className={style.loaderContainer}>
                     <span className={style.loader}></span>
@@ -37,7 +37,6 @@ export default function Header() {
                     <svg width="47" height="10" viewBox="0 0 47 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M47 1H1.24513e-06M47 9H7.70988" stroke="white" strokeOpacity="0.5" strokeWidth="0.5" />
                     </svg>
-
                 </div>
             </div>
         </div>

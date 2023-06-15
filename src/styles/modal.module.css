@@ -35,6 +35,8 @@
     position: absolute;
     bottom: 20%;
     left: 16%;
+}
+.closeSVG svg{
     height: 1.6rem;
 }
 .playerGlow{

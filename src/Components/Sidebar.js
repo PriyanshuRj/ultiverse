@@ -41,7 +41,7 @@ export default function Sidebar() {
                     <span className={style.linkText}>EVENTS</span>
                 </div>
             </div>
-          <ClickButton />
+            <ClickButton />
         </div>
     )
 }

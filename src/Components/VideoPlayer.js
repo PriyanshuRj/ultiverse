@@ -2,36 +2,10 @@ import React, { useState } from 'react'
 import style from "../styles/videoplayer.module.css"
 import Modal from 'react-modal';
 import ModalContent from './ModalContent';
+import CrossSVG from './SVGs/CrossSVG';
+import { styles } from './helpers/modalStyle';
 const videoImage = process.env.PUBLIC_URL + "/video.png";
-const styles = {
-  overlay: {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: '#010101',
-    zIndex: 5,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  content: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    background: 'transparent',
-    overflow: 'auto',
-    WebkitOverflowScrolling: 'touch',
-    border: 'none',
-    outline: 'none',
-    padding: '0'
-  }
-}
+
 export default function VideoPlayer({ openModal, modalIsOpen }) {
   function closeModal() {
     openModal(false);
@@ -68,7 +42,6 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
           </linearGradient>
         </defs>
       </svg>
-
       <svg className={style.playOverlay} width="105" height="104" viewBox="0 0 105 104" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_145_13309)">
           <circle cx="52.4684" cy="51.828" r="30.9012" fill="white" fillOpacity="0.1" />
@@ -86,22 +59,9 @@ export default function VideoPlayer({ openModal, modalIsOpen }) {
           </filter>
         </defs>
       </svg>
-      <svg className={style.crossSVG} width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_9_81)">
-                <path d="M36.6087 1.3916H1.3916V36.6087H36.6087V1.3916Z" stroke="#00FFE6" stroke-width="1.39143" stroke-miterlimit="10" />
-                <path d="M36.6093 32.6429V36.6085H32.9637" stroke="#00FFE6" stroke-width="2.78286" stroke-miterlimit="10" />
-                <path d="M1.3916 5.35718V1.3916H5.05107" stroke="#00FFE6" stroke-width="2.78286" stroke-miterlimit="10" />
-                <path d="M32.643 1.54407H36.6086V5.20353" stroke="#00FFE6" stroke-width="2.78286" stroke-miterlimit="10" />
-                <path d="M5.35718 36.4549H1.3916V32.7954" stroke="#00FFE6" stroke-width="2.78286" stroke-miterlimit="10" />
-                <path d="M5.35791 5.35706L32.6439 32.643" stroke="#00FFE6" stroke-width="1.04357" stroke-miterlimit="10" />
-                <path d="M5.35791 32.643L32.6439 5.35706" stroke="#00FFE6" stroke-width="1.04357" stroke-miterlimit="10" />
-              </g>
-              <defs>
-                <clipPath id="clip0_9_81">
-                  <rect width="38" height="38" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+      <div className={style.crossSVG} >
+        <CrossSVG />
+      </div>
     </div>
   )
 }

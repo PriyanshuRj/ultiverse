@@ -40,6 +40,8 @@
     position: absolute;
     bottom: 5%;
     right: 5%;
+}
+.crossSVG svg{
     height: 1.6rem;
 }
 @media screen and (max-width: 1300px) {
